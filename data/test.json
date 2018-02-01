@@ -1,0 +1,797 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="apple-itunes-app" content="app-id=1264722932">
+  <meta name="yandex-verification" content="82d863bafd079207" />
+  <meta name="google-site-verification" content="ghIcLrFuLFucErQEL7rRWNF_m7aLasyq1BhqoRKJkdI" />
+  <meta name="csrf-token" content="X2WqeqFYWrFQHdBaCreNbUYCS5NisFDXLBvf9cDy">
+
+  <meta name="view-name" content="pages-cards">
+  <meta name="smartbanner:title" content="Stats Royale">
+  <meta name="smartbanner:author" content="Overwolf">
+  <meta name="smartbanner:price" content="FREE">
+  <meta name="smartbanner:price-suffix-google" content=" - In Google Play">
+  <meta name="smartbanner:icon-google" content="/images/android_smart_banner.png">
+  <meta name="smartbanner:button" content="INSTALL">
+  <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.overwolf.statsroyale">
+  <meta name="smartbanner:enabled-platforms" content="android">
+
+    <title>Clash Royale Cards</title>
+  
+  <link href="/webfonts/fonts.css" rel="stylesheet">
+  <link href="/css/build.css?v=1517420545" rel="stylesheet">
+
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/images/favicon/apple-touch-icon-180x180-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/favicon/apple-touch-icon-120x120-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/favicon/apple-touch-icon-76x76-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/images/favicon/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" sizes="310x310" href="/images/favicon/large.png">
+
+  
+  <link rel="alternate" hreflang="en" href="/cards">
+  <link rel="alternate" hreflang="fr" href="/fr/cards">
+  <link rel="alternate" hreflang="ru" href="/ru/cards">
+  <link rel="alternate" hreflang="it" href="/it/cards">
+  <link rel="alternate" hreflang="es" href="/es/cards">
+  <link rel="alternate" hreflang="de" href="/de/cards">
+
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-55BB48Q');</script>
+  <!-- End Google Tag Manager -->
+
+  
+
+  
+  
+  
+  <script>
+    window.Laravel = {"csrfToken":"X2WqeqFYWrFQHdBaCreNbUYCS5NisFDXLBvf9cDy"}  </script>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55BB48Q"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="layout__page">
+        <div class="header">
+            <div class="layout__container header__container">
+                <a href="http://statsroyale.com" class="header__logo">
+                    <div class="header__logoIcon"></div>
+                </a>
+                <div class="header__search">
+                    <form id="search-bar" class="header__searchInput">
+                        <div class="ui__button ui__buttonWhite ui__mediumButton header__typeButton">
+                            <div class="header__typeCaption">Players</div>
+                            <div class="header__arrow"></div>
+                        </div>
+
+                        <input type="text" class="ui__input ui__inputMedium ui__inputRound header__input" placeholder="Tag #XXXXXX" />
+                        <div class="header__info" id="guide"></div>
+                        <div class="header__settingsIcon" style="display: none"></div>
+
+                        <button class="ui__button ui__buttonWhite ui__mediumButton header__searchButton">
+                           <div class="header__searchIcon"></div>
+                        </button>
+
+                        <div class="ui__tooltip header__dropdown" style="display: none">
+                            <a href="#" class="header__dropdownLink" data-type="Player">Players</a>
+                            <a href="#" class="header__dropdownLink" data-type="Clan">Clans</a>
+                        </div>
+                    </form>
+
+                    <div class="modal__overlay" data-name="clan">
+                      <div class="modal__content header__clanModal">
+                        <span class="modal__close"></span>
+                        <div class="ui__headerSmall">
+                          Advanced search
+                        </div>
+                        <div id="clan-advanced-search"></div>
+                      </div>
+                    </div>
+
+                    <div class="modal__overlay" data-name="guide">
+                      <div class="modal__content header__guideModal">
+                        <span class="modal__close"></span>
+                        <div class="header__guideSlider">
+                          <div class="header__guideSlide">
+                            <div class="ui__mediumText">
+                              <strong>Step 1</strong> <br/>
+                              Launch Clash Royale and tap your name
+                            </div>
+                            <img src="/images/guide-1.png" alt="" class="header__guideImage" />
+                          </div>
+                          <div class="header__guideSlide">
+                            <div class="ui__mediumText">
+                              <strong>Step 2</strong> <br/>
+                              Find your Player Tag under your name
+                            </div>
+                            <img src="/images/guide-2.jpg" alt="" class="header__guideImage" />
+                          </div>
+                          <div class="header__guideSlide">
+                            <div class="ui__mediumText">
+                                <strong>Step 3</strong> <br/>
+                                Type your Player Tag in the search field and click the Search button
+                            </div>
+                            <img src="/images/step3.gif" alt="" class="header__guideImage" />
+                          </div>
+                        </div>
+
+                        <div class="header__guideNavigation">
+                          <div class="header__dot header__dotActive" data-index="0"></div>
+                          <div class="header__dot" data-index="1"></div>
+                          <div class="header__dot" data-index="2"></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="inner-header"></div>
+            </div>
+        </div>
+
+        <div class="layout__content layout__container">
+            
+<div class="layout__wrapper">
+  <div class="ui__card layout__wide cards">
+    <div class="ui__headerMedium">
+        Cards <div class="addthis_inline_share_toolbox" style="float:right"></div>
+    </div>
+
+    <div id="card-filters" class="cards__filters"></div>
+
+        <div class="cards__group">
+        <div class="ui__headerSmall">Troop</div>
+
+        <div class="cards__cards">
+                                                <div class="cards__card" data-cost='1' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Skeletons'><img src='/images/cards/full/skeletons.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Skeletons
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='1' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Ice+Spirit'><img src='/images/cards/full/snow_spirits.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Ice Spirit
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='2' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Goblins'><img src='/images/cards/full/goblins.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Goblins
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='2' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Spear+Goblins'><img src='/images/cards/full/goblin_archer.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Spear Goblins
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='2' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Fire+Spirits'><img src='/images/cards/full/fire_spirits.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Fire Spirits
+                        </div>
+                    </div>
+                                                                                            <div class="cards__card" data-cost='2' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Bats'><img src='/images/cards/full/bats.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Bats
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Knight'><img src='/images/cards/full/knight.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Knight
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Archers'><img src='/images/cards/full/archers.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Archers
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Minions'><img src='/images/cards/full/minion.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Minions
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Bomber'><img src='/images/cards/full/bomber.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Bomber
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='3' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Goblin+Gang'><img src='/images/cards/full/goblin_gang.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Goblin Gang
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Skeleton+Barrel'><img src='/images/cards/full/skeleton_balloon.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Skeleton Barrel
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='5' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Barbarians'><img src='/images/cards/full/barbarians.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Barbarians
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Minion+Horde'><img src='/images/cards/full/minion_horde.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Minion Horde
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='6' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Royal+Giant'><img src='/images/cards/full/royal_giant.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Royal Giant
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='6' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Elite+Barbarians'><img src='/images/cards/full/angry_barbarian.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Elite Barbarians
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='3' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Skeleton+Army'><img src='/images/cards/full/skeleton_horde.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Skeleton Army
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Guards'><img src='/images/cards/full/skeleton_warriors.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Guards
+                        </div>
+                    </div>
+                                                                                                                                                    <div class="cards__card" data-cost='4' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Baby+Dragon'><img src='/images/cards/full/baby_dragon.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Baby Dragon
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Dark+Prince'><img src='/images/cards/full/dark_prince.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Dark Prince
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='4' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Hunter'><img src='/images/cards/full/hunter.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Hunter
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Balloon'><img src='/images/cards/full/chr_balloon.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Balloon
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Witch'><img src='/images/cards/full/chr_witch.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Witch
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Prince'><img src='/images/cards/full/prince.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Prince
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Bowler'><img src='/images/cards/full/bowler.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Bowler
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Executioner'><img src='/images/cards/full/executioner.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Executioner
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Cannon+Cart'><img src='/images/cards/full/cannon_cart.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Cannon Cart
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='6' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Giant+Skeleton'><img src='/images/cards/full/giant_skeleton.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Giant Skeleton
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='7' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/P.E.K.K.A'><img src='/images/cards/full/pekka.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            P.E.K.K.A
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='8' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Golem'><img src='/images/cards/full/chr_golem.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Golem
+                        </div>
+                    </div>
+                                                                                            <div class="cards__card" data-cost='3' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Ice+Wizard'><img src='/images/cards/full/ice_wizard.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Ice Wizard
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Princess'><img src='/images/cards/full/princess.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Princess
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Miner'><img src='/images/cards/full/miner.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Miner
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Bandit'><img src='/images/cards/full/bandit.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Bandit
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Royal+Ghost'><img src='/images/cards/full/ghost.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Royal Ghost
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Lumberjack'><img src='/images/cards/full/rage_barbarian.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Lumberjack
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Inferno+Dragon'><img src='/images/cards/full/inferno_dragon.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Inferno Dragon
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Electro+Wizard'><img src='/images/cards/full/electro_wizard.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Electro Wizard
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Night+Witch'><img src='/images/cards/full/dark_witch.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Night Witch
+                        </div>
+                    </div>
+                                                                                            <div class="cards__card" data-cost='6' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Sparky'><img src='/images/cards/full/zapMachine.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Sparky
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='7' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Lava+Hound'><img src='/images/cards/full/lava_hound.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Lava Hound
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='7' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Mega+Knight'><img src='/images/cards/full/mega_knight.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Mega Knight
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='2' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Ice+Golem'><img src='/images/cards/full/ice_golem.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Ice Golem
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Mega+Minion'><img src='/images/cards/full/mega_minion.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Mega Minion
+                        </div>
+                    </div>
+                                                                                            <div class="cards__card" data-cost='3' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Dart+Goblin'><img src='/images/cards/full/blowdart_goblin.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Dart Goblin
+                        </div>
+                    </div>
+                                                                                            <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Valkyrie'><img src='/images/cards/full/valkyrie.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Valkyrie
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Musketeer'><img src='/images/cards/full/musketeer.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Musketeer
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Mini+P.E.K.K.A'><img src='/images/cards/full/mini_pekka.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Mini P.E.K.K.A
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Hog+Rider'><img src='/images/cards/full/hog_rider.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Hog Rider
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Battle+Ram'><img src='/images/cards/full/battle_ram.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Battle Ram
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Flying+Machine'><img src='/images/cards/full/flying_machine.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Flying Machine
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Zappies'><img src='/images/cards/full/zappies.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Zappies
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Giant'><img src='/images/cards/full/giant.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Giant
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Wizard'><img src='/images/cards/full/wizard.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Wizard
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                        <div class="cards__card" data-cost='9' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Three+Musketeers'><img src='/images/cards/full/three_musketeers.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Three Musketeers
+                        </div>
+                    </div>
+                                    </div>
+    </div>
+
+        <div class="cards__group">
+        <div class="ui__headerSmall">Building</div>
+
+        <div class="cards__cards">
+                                                                                                                                                                                                                                                                                                                                                                    <div class="cards__card" data-cost='3' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Cannon'><img src='/images/cards/full/chaos_cannon.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Cannon
+                        </div>
+                    </div>
+                                                                                                                                                    <div class="cards__card" data-cost='4' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Mortar'><img src='/images/cards/full/building_mortar.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Mortar
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Tesla'><img src='/images/cards/full/building_tesla.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Tesla
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="cards__card" data-cost='6' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/X-Bow'><img src='/images/cards/full/building_xbow.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            X-Bow
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="cards__card" data-cost='3' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Tombstone'><img src='/images/cards/full/tombstone.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Tombstone
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                        <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Furnace'><img src='/images/cards/full/firespirit_hut.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Furnace
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                        <div class="cards__card" data-cost='5' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Goblin+Hut'><img src='/images/cards/full/fire_furnace.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Goblin Hut
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Inferno+Tower'><img src='/images/cards/full/building_inferno.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Inferno Tower
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='5' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Bomb+Tower'><img src='/images/cards/full/bomb_tower.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Bomb Tower
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='6' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Elixir+Collector'><img src='/images/cards/full/building_elixir_collector.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Elixir Collector
+                        </div>
+                    </div>
+                                                                                            <div class="cards__card" data-cost='7' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Barbarian+Hut'><img src='/images/cards/full/barbarian_hut.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Barbarian Hut
+                        </div>
+                    </div>
+                                                                </div>
+    </div>
+
+        <div class="cards__group">
+        <div class="ui__headerSmall">Spell</div>
+
+        <div class="cards__cards">
+                                                                                                                                                                                            <div class="cards__card" data-cost='2' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Zap'><img src='/images/cards/full/zap.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Zap
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                        <div class="cards__card" data-cost='3' data-rarity='Common'>
+                        <a href='http://statsroyale.com/card/Arrows'><img src='/images/cards/full/order_volley.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Arrows
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                                                                                <div class="cards__card" data-cost='1' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Mirror'><img src='/images/cards/full/mirror.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Mirror
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='2' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Rage'><img src='/images/cards/full/rage.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Rage
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='3' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Goblin+Barrel'><img src='/images/cards/full/goblin_barrel.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Goblin Barrel
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Tornado'><img src='/images/cards/full/tornado.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Tornado
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='3' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Clone'><img src='/images/cards/full/copy.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Clone
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='4' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Freeze'><img src='/images/cards/full/freeze.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Freeze
+                        </div>
+                    </div>
+                                                                <div class="cards__card" data-cost='4' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Poison'><img src='/images/cards/full/poison.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Poison
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                                                                                                            <div class="cards__card" data-cost='6' data-rarity='Epic'>
+                        <a href='http://statsroyale.com/card/Lightning'><img src='/images/cards/full/lightning.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Lightning
+                        </div>
+                    </div>
+                                                                                                                        <div class="cards__card" data-cost='2' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/The+Log'><img src='/images/cards/full/the_log.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            The Log
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                                                                                                            <div class="cards__card" data-cost='5' data-rarity='Legendary'>
+                        <a href='http://statsroyale.com/card/Graveyard'><img src='/images/cards/full/graveyard.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Graveyard
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                                                    <div class="cards__card" data-cost='3' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Heal'><img src='/images/cards/full/heal.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Heal
+                        </div>
+                    </div>
+                                                                                                                                                                                                            <div class="cards__card" data-cost='4' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Fireball'><img src='/images/cards/full/fire_fireball.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Fireball
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                                                                                                            <div class="cards__card" data-cost='6' data-rarity='Rare'>
+                        <a href='http://statsroyale.com/card/Rocket'><img src='/images/cards/full/rocket.png'></a>
+                        <div class="ui__tooltip ui__tooltipTop ui__tooltipMiddle cards__tooltip">
+                            Rocket
+                        </div>
+                    </div>
+                                                                                            </div>
+    </div>
+
+    
+  </div>
+
+  <!-- SR_SideBanner_160x600 -->
+  <div  class="layout__ad" >
+  <div id="div-gpt-ad-1505497993476-0"></div>
+</div>
+</div>
+
+        </div>
+
+        <div class="footer">
+  <div class="layout__container">
+    <div class="footer__container">
+      <div class="footer__navigation">
+        <div class="footer__links">
+          <a href="http://statsroyale.com/blog" class="ui__link ui__whiteText ui__mediumText footer__link">News</a>
+          <a href="http://statsroyale.com/cards" class="ui__link ui__whiteText ui__mediumText footer__link">Cards</a>
+          <a href="http://statsroyale.com/deckbuilder" class="ui__link ui__whiteText ui__mediumText footer__link">Deck Builder</a>
+          <a href="http://statsroyale.com/championship" class="ui__link ui__whiteText ui__mediumText footer__link">Championship</a>
+        </div>
+
+        <div class="footer__links">
+          <a href="http://statsroyale.com/top/decks" class="ui__link ui__whiteText ui__mediumText footer__link">Top Decks</a>
+          <a href="http://statsroyale.com/top/cards" class="ui__link ui__whiteText ui__mediumText footer__link">Top Cards</a>
+          <a href="http://statsroyale.com/top/players" class="ui__link ui__whiteText ui__mediumText footer__link">Top Players</a>
+          <a href="http://statsroyale.com/tournaments" class="ui__link ui__whiteText ui__mediumText footer__link">Tournaments</a>
+        </div>
+
+        <div class="footer__links footer__social">
+          <a href="https://facebook.com/statsroyale" target="_blank" class="footer__icon footer__facebook ui__link ui__whiteText ui__mediumText footer__link">
+            Facebook
+          </a>
+          <a href="https://vk.com/statsroyale" target="_blank" class="footer__icon footer__vk ui__link ui__whiteText ui__mediumText footer__link">
+            Vkontakte
+          </a>
+          <a href="https://discord.gg/statsroyale" target="_blank"  class="footer__icon footer__discord ui__link ui__whiteText ui__mediumText footer__link">
+            Discord
+          </a>
+          <a href="https://twitter.com/statsroyale" target="_blank" class="footer__icon footer__twitter ui__link ui__whiteText ui__mediumText footer__link">
+            Twitter
+          </a>
+        </div>
+        <div class="footer__links footer__apps">
+          <div class="footer__link ui__whiteText ui__mediumText">
+            Official Apps
+          </div>
+            <a href="https://itunes.apple.com/us/app/stats-royale/id1264722932?mt=8" class="appbadge__link">
+              <div class="app-store-badge"></div>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.overwolf.statsroyale" class="appbadge__link">
+              <div class="google-play-badge"></div>
+            </a>
+        </div>
+      </div>
+      <div class="footer__brand"><a href="http://www.overwolf.com/" class="footer__overwolf footer__icon"></a></div>
+      <div class="footer__supercell">
+        <div class="ui__mediumText ui__whiteText">
+          
+    This content is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and  Supercell is not responsible for it.
+    For more information see <strong><a href='http://www.supercell.com/fan-content-policy' class='ui__link ui__whiteText'>Supercell's Fan Content Policy</a></strong>.
+    See our <a href='http://www.overwolf.com/legal/#Privacy-policy' class='ui__link ui__whiteText'>Privacy Policy</a> for additional details.
+  
+          <font style="color: #333">v1.2</font>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /13326244/SRO_Sticky_Mobile -->
+<div id="div-gpt-ad-1509982821884-0"></div>
+
+<script id="dsq-count-scr" src="//statsroyale.disqus.com/count.js" async></script>
+<script type="text/javascript" src="/js/build.js?v=1517420546"></script>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '778945222267918',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-87846423-1', {'sampleRate': 2.5});
+  ga('send', 'pageview');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter44640748 = new Ya.Metrika({
+                    id:44640748,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/44640748" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+    </div>
+</body>
+</html>
