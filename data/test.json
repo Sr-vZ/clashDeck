@@ -7,7 +7,7 @@
   <meta name="apple-itunes-app" content="app-id=1264722932">
   <meta name="yandex-verification" content="82d863bafd079207" />
   <meta name="google-site-verification" content="ghIcLrFuLFucErQEL7rRWNF_m7aLasyq1BhqoRKJkdI" />
-  <meta name="csrf-token" content="X2WqeqFYWrFQHdBaCreNbUYCS5NisFDXLBvf9cDy">
+  <meta name="csrf-token" content="tspanWxWyvRs9WqSAT1O5xXGV6qHzT6XklFmRgZC">
 
   <meta name="view-name" content="pages-cards">
   <meta name="smartbanner:title" content="Stats Royale">
@@ -22,7 +22,7 @@
     <title>Clash Royale Cards</title>
   
   <link href="/webfonts/fonts.css" rel="stylesheet">
-  <link href="/css/build.css?v=1517420545" rel="stylesheet">
+  <link href="/css/build.css?v=1517515615" rel="stylesheet">
 
   <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/images/favicon/apple-touch-icon-180x180-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152-precomposed.png">
@@ -56,7 +56,7 @@
   
   
   <script>
-    window.Laravel = {"csrfToken":"X2WqeqFYWrFQHdBaCreNbUYCS5NisFDXLBvf9cDy"}  </script>
+    window.Laravel = {"csrfToken":"tspanWxWyvRs9WqSAT1O5xXGV6qHzT6XklFmRgZC"}  </script>
 
 </head>
 
@@ -732,7 +732,7 @@
 <div id="div-gpt-ad-1509982821884-0"></div>
 
 <script id="dsq-count-scr" src="//statsroyale.disqus.com/count.js" async></script>
-<script type="text/javascript" src="/js/build.js?v=1517420546"></script>
+<script type="text/javascript" src="/js/build.js?v=1517502203"></script>
 
 <script>
   window.fbAsyncInit = function() {

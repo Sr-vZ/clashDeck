@@ -1,6 +1,7 @@
 const request = require('request')
 const fs = require('fs')
 const cheerio = require('cheerio')
+const cheerioTableparser = require('cheerio-tableparser')
 
 
 var apiUrl = "http://statsroyale.com/cards"
@@ -60,9 +61,28 @@ function getCardStat(url) {
         }
     }
     var file = fs.createWriteStream("./Data/" + url.replace('http://statsroyale.com/card/','') +".json")
+    filePath = "./Data/" + url.replace('http://statsroyale.com/card/', '') + ".json"
+    
     request(options,function (err,resp,body) {
-        
-    }).pipe(file)
+        $ = cheerio.load(body, {    
+            normalizeWhitespace: true
+        })
+        tbl = $('table[class="card__desktopTable card__table"]')
+        cheerioTableparser($);
+
+        data = $('table[class="card__desktopTable card__table"]').parsetable(false,false,true); 
+        console.log(data)
+        fs.writeFileSync(filePath , data, function (err) {
+            if (err) {
+                return console.log(err);
+            }
+
+            console.log("The file was saved!");
+        }); 
+        /* file.on('open',function (data) {
+            file.write(JSON.parse(data))
+        }) */
+    })//.pipe(file)
 }
 
 function allCards() {
